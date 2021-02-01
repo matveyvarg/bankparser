@@ -16,7 +16,15 @@ class App:
         reader_class=None,
         writer_class=None
     ):
-
+        """
+        Constructor for application class
+        It accept Iterable object with files and field mappings
+        [(filepath, {field_mappings})]
+        Args:
+            files (Iterable[tuple]): [description]
+            reader_class ([type], optional): [description]. Defaults to None.
+            writer_class ([type], optional): [description]. Defaults to None.
+        """
         self.reader_class = reader_class
         self.writer_class = writer_class
 
